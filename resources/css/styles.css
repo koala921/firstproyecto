@@ -1,0 +1,213 @@
+td,th{
+    border:1px solid #0000;
+    padding:12px;
+    text-align: left;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow: 0 25px 25px rgba(0, 0 , 0, 0.5);
+    margin-bottom: 20px;
+}
+th{
+background-color: #f4f4f4;
+font-weight: bold;
+}
+td{
+background-color: #ffffff;
+}
+header{
+    background-color: #072746;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+header a {
+    color: #ffff;
+    text-decoration: none;
+    margin: 0 15px;
+
+}
+header a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: #343a40;
+    color:#ffff;
+    padding: 10px;
+    text-align: center;
+    /* position: fixed; */
+    bottom:0;
+    width: 100%;
+}
+body{
+    margin: 0;  
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color:#333;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+
+}
+hr{ 
+    color: #333;
+}
+main{
+    padding: 20px;
+}
+#modify:hover{
+    text-decoration: underline;
+}
+#modify{
+    margin: 0 15px;
+    text-align: center;
+}
+.show{
+    text-align: center;
+    font-size: 17px;
+}
+
+.num_prendas:hover{
+    background-color: orangered;
+}
+.boton-del{
+    background-color: #e74c3c;
+    color:#ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+.boton-del:hover{
+    background-color: #c0392b;
+}
+.boton-del:focus{
+    outline:none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+.boton-del:active{
+    background-color: #a93226;
+    box-shadow:0 3px 5px rgba(0, 0, 0, 0.2);
+    transform:translateY(2px);
+
+}
+.form{
+    text-align: center;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+#alert-del{
+
+}
+#crear-prenda,#crear-categoria{
+    text-align: center;
+    padding:15px;
+}
+#crear-prenda:hover{
+    text-decoration: underline;
+    color: #072746;
+}
+#button-create{
+    background-color: #3c61e7;
+    color:#ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+#crear{
+    text-align: center;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+h3,h4{
+    text-align: center;
+    font-size: 22px;
+}
+.cont-shirts{   
+    text-align: center;
+    padding: 14px;
+    flex: 1;
+}
+.cont-shirts select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid #072746;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cont-shirts select:focus {
+    border-color: #3c61e7;
+    box-shadow: 0 0 0 3px rgba(60, 97, 231, 0.5);
+    outline: none;
+}
+
+.cont-shirts select option {
+    padding: 10px;
+}
+
+.cont-shirts label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #072746;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cont-shirts select option:first-of-type {
+    display: none;
+}
+
+.cont-shirts select option:disabled {
+    color: #888;
+}
+.cont-sud{
+    text-align: center;
+    padding: 14px;
+    flex: 1;
+}
+.cont-mod{
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+}   
+.hoodie, .shirt{
+    font-size: 20px;
+    padding: 9px;
+}
+#tshirts, #sudaderas{
+    font-size: 3vh;
+    padding: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#tshirts:hover,#sudaderas:hover{
+font-family: cursive;
+font-weight: bolder;
+}
