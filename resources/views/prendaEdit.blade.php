@@ -22,21 +22,21 @@
             <input type="text" name="Sudaderas" value="{{ $prenda->Sudaderas }}" id="sudaderas">
         </div>
         <div class="cont-mod">
-            <label class="shirt" for="playeras">Escribe el numero de Playeras</label>
-            <input type="text" name="playeras" id="tshirts" value="{{ $prenda->Playeras }}">
+            <label class="shirt" for="Playeras">Escribe el numero de Playeras</label>
+            <input type="text" name="Playeras" id="tshirts" value="{{ $prenda->Playeras }}">
         </div>
         <div class="cont-shirts">
         <select id="categorias" name="categorias[]" multiple>
+            <label for="categorias">Categorias</label>
             <option value="disabled selected">Selecciona una categoria </option>
             @foreach($categorias as $categoria)
-                <option value="{{$categoria->id}}"> 
-                    @if ($prenda->categorias->contains({{$categoria->id}})) selected @endif<br><br>
+                <option value="{{$categoria->id}}"
+                    @if ($prenda->categorias->contains($categoria->id)) selected @endif>
                     {{$categoria->Talla}}
                     {{$categoria->Tipo}}
                 </option>
             @endforeach
         </select>
-        <label for="categorias">Categorias</label>
     </div>
         
         <div id="crear">

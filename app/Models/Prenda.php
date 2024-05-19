@@ -10,10 +10,10 @@ class Prenda extends Model
     use HasFactory;
 
     protected $fillable=['Sudaderas', 'Playeras'];
-    
+
     public function categorias()
     {
         return $this->belongsToMany(Categoria::class);
     }
-    // public $timestamps = false;
+    public $timestamps = true;
 }

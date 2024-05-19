@@ -13,7 +13,7 @@
     <h1>Prenda #{{$prenda->id}}</h1>
     @foreach ($prenda->categorias as $categoria)
         <h5>{{$categoria->Talla}}<br><br>
-            {{$categproa->Tipo}}
+            {{$categoria->Tipo}}
         </h5>
     @endforeach
     <hr>

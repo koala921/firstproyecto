@@ -41,7 +41,6 @@ class PrendaController extends Controller
         $prenda= new Prenda();
         $prenda->Sudaderas = $request->Sudaderas;
         $prenda->Playeras = $request->Playeras;
-        $prenda->created_at= $request->created_at;
         $prenda->save();
         $prenda->categorias()->attach($request->categorias);
         Session()->flash('success', 'Se ha guardado con exito');
@@ -70,9 +69,10 @@ class PrendaController extends Controller
      */
     public function update(Request $request, Prenda $prenda)
     {
-        $prenda->Sudaderas = $request->Sudaderas;
-        $prenda->Playeras = $request->Playeras;
+        $prenda->Sudaderas = $request->has('Sudaderas')? $request->Sudaderas : 0;
+        $prenda->Playeras = $request->has('Playeras') ? $request->Playeras : 0;
         $prenda->created_at= $request->created_at;
+        $prenda->updated_at=$request->updated_at;
         $prenda->save();
         if($request->has('categorias')){
             $prenda->categorias()->sync($request->categorias);
